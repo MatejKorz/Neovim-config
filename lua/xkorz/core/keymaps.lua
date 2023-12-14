@@ -11,9 +11,9 @@ keymap.set("n", "x", '"_x') -- dont copy char on delete
 keymap.set("n", "<leader>+", "<C-a>") -- increment/decrement numbers
 keymap.set("n", "<leader>-", "<C-x>")
 
-keymap.set("n", "<leader>sv", "<C-w>v") -- vertical split
-keymap.set("n", "<leader>sh", "<C-w>s") -- horizontal split
-keymap.set("n", "<leader>sx", ":close<CR>") -- close split window
+keymap.set("n", "<leader>sv", "<C-w>v", {desc = "Vertical split"})
+keymap.set("n", "<leader>sh", "<C-w>s", {desc = "Horizontal split"})
+keymap.set("n", "<leader>sx", ":close<CR>", {desc = "Close window"})
 keymap.set("n", "<leader>s<Left>", "<C-w>h")
 keymap.set("n", "<leader>s<Down>", "<C-w>j")
 keymap.set("n", "<leader>s<Up>", "<C-w>k")
