@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  {import = "xkorz.plugins"}, 
+  {import = "xkorz.plugins"},
   {import = "xkorz.plugins.lsp"}
   }, {
     checker = {enable=true, notify=false,},

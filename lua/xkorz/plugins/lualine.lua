@@ -7,7 +7,7 @@ return {
 
     lualine.setup({
       options = {
-        theme = "catppuccin",
+        theme = "catppuccin-frappe",
         globalstatus = true,
       },
       sections = {
@@ -19,6 +19,14 @@ return {
           {"encoding"},
           {"fileformat"},
           {"filetype"},
+        },
+      },
+      tabline = {
+        lualine_x = {
+          {
+            "buffers",
+            mode = 3,
+          },
         },
       },
     })

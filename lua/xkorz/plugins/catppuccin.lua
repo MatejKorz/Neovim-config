@@ -37,10 +37,15 @@ return {
       color_overrides = {
         mocha = {
           base = "#1b1e24",
-        }
+        },
+        macchiato = {
+          base = "#252729",
+          mantle = "#242424",
+        },
       },
       custom_highlights = {},
       integrations = {
+        dashboard = true,
         cmp = true,
         gitsigns = true,
         nvimtree = true,
@@ -73,7 +78,6 @@ return {
           enabled = true,
         },
         which_key = true,
-        barbar = true,
       },
     })
 
