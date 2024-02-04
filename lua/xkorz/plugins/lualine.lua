@@ -9,6 +9,10 @@ return {
       options = {
         theme = "catppuccin-frappe",
         globalstatus = true,
+        disabled_filetypes = {
+          "dashboard",
+          "help",
+        },
       },
       sections = {
         lualine_x = {

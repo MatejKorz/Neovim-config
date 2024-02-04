@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpadte",
-  event = {"VeryLazy"},
+  --event = {"VeryLazy"},
   dependencies = {"nvim-treesitter/nvim-treesitter-textobjects","HiPhish/nvim-ts-rainbow2"},
   config = function()
     require("nvim-treesitter.configs").setup {
@@ -13,7 +13,7 @@ return {
       highlight = {
         enable = true,
         disable = {""},
-        additional_vim_regex_highlighting = true,
+        additional_vim_regex_highlighting = false,
       },
       indent = {enable = true},
     }
