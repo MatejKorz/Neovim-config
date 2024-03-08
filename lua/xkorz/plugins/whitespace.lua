@@ -10,7 +10,7 @@ return {
 
             -- `ignored_filetypes` configures which filetypes to ignore when
             -- displaying trailing whitespace
-            ignored_filetypes = { 'TelescopePrompt', 'Trouble', 'help', 'dashboard', 'terminal' },
+            ignored_filetypes = { 'TelescopePrompt', 'Trouble', 'help', 'dashboard', 'term', 'checkhealt' },
 
             -- `ignore_terminal` configures whether to ignore terminal buffers
             ignore_terminal = true,
@@ -21,6 +21,6 @@ return {
         })
 
         -- remove trailing whitespace with a keybinding
-        vim.keymap.set('n', '<Leader>t', require('whitespace-nvim').trim)
+        -- vim.keymap.set('n', '<Leader>t', require('whitespace-nvim').trim)
     end
 }

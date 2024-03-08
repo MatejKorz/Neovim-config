@@ -8,7 +8,7 @@ return {
     config = function()
         local telescope = require("telescope")
 
-        telescope.load_extension("fzf");
+--        telescope.load_extension("fzf");
 
         local keymap = vim.keymap
         keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<cr>', {desc = "Files in cwd"})
